@@ -647,7 +647,13 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Isaac Ige. All rights reserved. | Designed with ❤️ for innovation</p>
+            <p>&copy;
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.getElementById("year").textContent = new Date().getFullYear();
+                    });
+                </script>
+                <span id="year"> </span> Isaac Ige. All rights reserved. | Designed with ❤️ for innovation</p>
         </div>
     </footer>
 
